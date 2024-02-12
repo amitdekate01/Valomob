@@ -1,0 +1,91 @@
+body {
+    
+    margin: 0;
+    overflow-x: hidden;
+    
+}   
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  
+  
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  
+  color: black;
+}
+
+
+
+.custom-navbar {
+    background-color: transparent !important; 
+    box-shadow: none !important; 
+    opacity: 0.7;
+}
+
+
+
+.navbar {
+    background-color: rgb(17, 6, 6);
+    color: rgb(225, 11, 47); 
+    display: flex; 
+    align-items: center; 
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    font-weight: normal;
+    position: relative;
+    transition: font-weight 0.3s, color 0.3s;
+    color: inherit; 
+}
+
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #ffc107; 
+    fill-opacity: inherit;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;    
+    background-color: #ffc107; 
+    transition: width 0.5s;
+    opacity: 2;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+
